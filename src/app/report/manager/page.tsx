@@ -1,5 +1,8 @@
 "use client"
 
+import Container from "@report/app/components/Container";
+import PageBody from "@report/app/components/PageBody";
+import PageHeader from "@report/app/components/PageHeader";
 import SplashScreen from "@report/app/components/SplashScreen";
 import { useEffect, useState } from "react";
 
@@ -24,7 +27,12 @@ export default function ManagerPage() {
 
     return (
         <>
-            <h1> Report Manager</h1>
+            <Container>
+                <PageHeader title="Report Manager" />
+                <PageBody>
+                    
+                </PageBody>
+            </Container>
         </>
     );
 }

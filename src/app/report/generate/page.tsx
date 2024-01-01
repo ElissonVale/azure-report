@@ -1,5 +1,8 @@
 "use client"
 
+import Container from "@report/app/components/Container";
+import PageBody from "@report/app/components/PageBody";
+import PageHeader from "@report/app/components/PageHeader";
 import SplashScreen from "@report/app/components/SplashScreen";
 import { useEffect, useState } from "react";
 
@@ -25,7 +28,12 @@ export default function GeneratePage() {
 
     return (
         <>
-            <h1>Generate a new report day</h1>
+            <Container>
+                <PageHeader title="Generate a New Report" />
+                <PageBody>
+                    
+                </PageBody>
+            </Container>
         </>
     );
 }
